@@ -1,0 +1,6 @@
+bind-key j down all
+bind-key k up all
+bind-key l next-feed all
+bind-key h prev-feed all
+auto-reload no
+browser open

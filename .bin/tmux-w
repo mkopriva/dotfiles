@@ -1,0 +1,14 @@
+#!/bin/sh
+
+GBX_DIR=$GOPATH/src/givebox/
+
+tmux new-session -s gbx -d -c $GBX_DIR
+#tmux split-window -v -p 20 -c $GBX_DIR
+#tmux split-window -h -c $GBX_DIR
+tmux attach-session -t gbx
+
+FRK_DIR=$GOPATH/src/github.com/mkopriva/frk/
+
+# play
+tmux new-session -s frk -d -c $FRK_DIR
+tmux attach-session -t frk
